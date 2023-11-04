@@ -26,5 +26,5 @@ RUN set -eux; \
 COPY --link laravel-api ./
 
 RUN set -eux; \
-	chmod -R 755 /var/www/storage; \
+	chmod -R 755 storage; \
 	composer dump-autoload;
